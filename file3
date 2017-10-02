@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('dev') {
+            steps {
+                echo " this is development file"
+            }
+        }    
+        stage('qa')  {
+            steps{
+                echo "qa server"
+            }
+        }    
+        stage ('prod'){
+            steps{
+                echo "production env"
+            }
+        }
+    }
+}
