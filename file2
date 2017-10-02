@@ -1,0 +1,15 @@
+node
+{
+ stage ('dev')
+ {
+ echo "hello dev"
+ }
+ stage('qa')
+ {
+ echo "hello dev"
+ }
+ stage('prod')
+ {
+ echo " hello prod "
+ }
+}
